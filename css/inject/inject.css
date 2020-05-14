@@ -1,4 +1,7 @@
-.meta.charter-story:before {
+.charter-story {
+  background-image: none !important;
+}
+
+.charter-story:before {
   content: "🚀";
-  background-image: none!important
 }

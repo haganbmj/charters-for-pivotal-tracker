@@ -57,8 +57,8 @@ chrome.extension.sendMessage({}, function(response) {
       }
 
       function styleStoryIcon(story) {
-        if(story.querySelector('header.preview span.meta')) {
-          var meta = story.querySelector('header.preview span.meta');
+        if(story.querySelector('header.preview div.meta')) {
+          var meta = story.querySelector('header.preview .meta span[class^="StoryPreviewItem__storyType___"]');
           meta.classList.add("charter-story");
         }
       }
