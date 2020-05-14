@@ -4,4 +4,41 @@
 
 .charter-story:before {
   content: "🚀";
+  animation-name: rocket;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes rocket {
+  0% {
+    transform: translateY(1.4em) translateX(-1.4em);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0;
+  }
+  
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-1.4em) translateX(1.4em);
+    opacity: 0;
+  }
 }
